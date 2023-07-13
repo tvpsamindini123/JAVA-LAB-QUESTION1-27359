@@ -1,0 +1,33 @@
+package exceptionhanding;
+public class ArithmeticException {
+    
+}
+
+package exceptionhanding;
+import java.util.Scanner;
+public class ExceptionHanding {
+
+    public static void main(String[] args) 
+    {
+               int no1,no2,ans;
+        Scanner sc=new Scanner(System.in);
+          System.out.println("Enter first number: ");
+          no1=sc.nextInt();
+           System.out.println("Enter second number: ");
+          no2=sc.nextInt();
+            try
+        {
+          float z;
+            z=no1/no2;
+          System.out.println(z);
+          
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println("Divide by 0 error");
+        }
+            
+         
+    }
+    
+}
